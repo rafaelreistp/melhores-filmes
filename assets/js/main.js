@@ -65,7 +65,7 @@ function showTrailer(movieId) {
         .then(({
             results
         }) => {
-            $('#modal iframe').attr('src', `http://www.youtube.com/embed/${results[0].key}?autoplay=1`);
+            $('#modal iframe').attr('src', `https://www.youtube.com/embed/${results[0].key}?autoplay=1`);
             $('#modal').modal('show');
         });
 }
