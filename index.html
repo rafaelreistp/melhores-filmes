@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Melhores Filmes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <main id="main" class="container-fluid">
+        <div class="intro">
+            <h1>Melhores de 2018</h1>
+            <p class="lead">Os filmes mais populares do ano</p>
+        </div>
+        <div class="container genre-list row">
+            <div class="genre-item col-6 col-md-4 col-lg-2">
+                <h2><a href="#" class="active" onclick="getMoviesByGenre(event, '');"><img src="assets/img/icons8-film-reel-80.png" alt="Aventura" />
+                        <span>Todos</span></a></h2>
+            </div>
+            <div class="genre-item col-6 col-md-4 col-lg-2">
+                <h2><a href="#" onclick="getMoviesByGenre(event, '28');"><img src="assets/img/icons8-action-50.png" alt="Ação" />
+                        <span>Ação</span></a></h2>
+            </div>
+            <div class="genre-item col-6 col-md-4 col-lg-2">
+                <h2><a href="#" onclick="getMoviesByGenre(event, '35');"><img src="assets/img/icons8-comedy-50.png" alt="Comédia" />
+                        <span>Comédia</span></a></h2>
+            </div>
+            <div class="genre-item  col-sm-6 col-6 col-md-4 col-lg-2">
+                <h2><a href="#" onclick="getMoviesByGenre(event, '18');"><img src="assets/img/icons8-drama-50.png" alt="Drama" />
+                        <span>Drama</span></a></h2>
+            </div>
+            <div class="genre-item col-6 col-md-4 col-lg-2">
+                <h2><a href="#" onclick="getMoviesByGenre(event, '878');"><img src="assets/img/icons8-bot-50.png" alt="Sci-Fi" />
+                        <span>Sci-Fi</span></a></h2>
+            </div>
+            <div class="genre-item  col-sm-6 col-6 col-md-4 col-lg-2">
+                <h2><a href="#" onclick="getMoviesByGenre(event, '27');"><img src=" assets/img/icons8-horror-50.png" alt="Terror" />
+                        <span>Terror</span></a></h2>
+            </div>
+        </div>
+
+        <section id="movies"></section>
+    </main>
+
+    <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Trailer</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="assets/js/service.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

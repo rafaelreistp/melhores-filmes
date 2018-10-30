@@ -1,0 +1,235 @@
+/*
+
+// General 
+
+*/
+body {
+    font-family: Poppins;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/grey.png");
+    color: #343a40;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #01d277;
+}
+
+/*
+
+// Intro 
+
+*/
+.intro {
+    text-align: center;
+    margin: 80px 0 40px 0;
+}
+
+.intro h1 {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+/*
+
+// Genre List 
+
+*/
+.genre-list {
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.genre-item {
+    text-align: center;
+}
+
+.genre-item img {
+    width: 30px;
+}
+
+.genre-item h2 a {
+    color: #01d277;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    background-color: #343a40;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform .2s;
+}
+
+.genre-item h2 a.active{
+    border: 4px solid #01d277;
+    border-radius: 5px;
+ }
+
+@media (min-width: 576px) {
+    .genre-item img {
+        width: 50px;
+    }
+
+    .genre-item h2 a {
+        font-size: 1rem;
+        padding: 20px;
+    }
+}
+
+.genre-item h2 a:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.genre-item h2 a span {
+    margin-left: 10px;
+}
+
+@media (min-width: 992px) {
+    .genre-item h2 a {
+        flex-direction: column;
+    }
+
+    .genre-item h2 a span {
+        margin: 10px 0 0 0;
+    }
+}
+
+/*
+
+// Movie List 
+
+*/
+#movies {
+    margin-bottom: .5rem;
+}
+
+.movie {
+    display: flex;
+    margin-bottom: 1.5rem !important;
+}
+
+.movie-poster {
+    min-width: 185px;
+    height: auto;
+    position: relative;
+}
+
+.movie-poster img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.movie .play-trailer .overlay-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .3s ease;
+    background-color: hsla(210, 10%, 23%, 0.253);
+}
+
+.movie .play-trailer .overlay-icon:hover {
+    opacity: 0.8;
+    background-color: #343a40;
+}
+
+.movie .play-trailer .overlay-icon img {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+.movie .score {
+    width: 40px;
+    height: 40px;
+    background: #01d277;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 20px;
+}
+
+.movie-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background: #ffffff;
+}
+
+.movie-body .movie-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.movie-body .movie-title small {
+    margin-left: 10px;
+}
+
+.movie-body span {
+    font-size: 0.7em;
+    color: #999999;
+}
+
+.movie-body p {
+    font-size: 0.7em;
+    margin: 1rem 0;
+}
+
+@media (min-width: 576px) {
+    .movie-body p {
+        font-size: 0.9em;
+        margin: 1rem 0;
+    }
+}
+
+.modal-header .close:not(:disabled):not(.disabled) {
+    color: #ffffff;
+    opacity: 1;
+    padding-right: 0;
+}
+
+.modal-header .close:not(:disabled):not(.disabled):focus,
+.close:not(:disabled):not(.disabled):hover {
+    color: #01d277;
+}
+
+.modal-header {
+    border: 0;
+}
+
+.modal-header h2 {
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: 0;
+}
+
+.modal-body {
+    padding: 0;
+}
